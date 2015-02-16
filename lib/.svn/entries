@@ -1,0 +1,68 @@
+9
+
+dir
+17115
+https://svn.intra.sina.com.cn/blog/develop/baserd/BASERD_C/DistributedComputationFramework/code/lib
+https://svn.intra.sina.com.cn/blog
+
+
+
+2008-01-25T10:46:41.977474Z
+8446
+conglei
+
+
+svn:special svn:externals svn:needs-lock
+
+libtransdoc.a
+file
+
+
+
+
+2008-01-23T03:31:18.000000Z
+05f46fe2f20e50fe6fab675126e01fbe
+2008-01-25T10:46:41.977474Z
+8446
+conglei
+has-props
+
+libdispatch.a
+file
+
+
+
+
+2008-01-23T03:31:02.000000Z
+caebd683684bd87f2cd55e05536557d0
+2008-01-25T10:46:41.977474Z
+8446
+conglei
+has-props
+
+libmonitor.a
+file
+
+
+
+
+2008-01-23T03:31:10.000000Z
+2eeed3698adf1ebf72dc0f9183820a32
+2008-01-25T10:46:41.977474Z
+8446
+conglei
+has-props
+
+libcommon.a
+file
+
+
+
+
+2008-01-23T03:30:28.000000Z
+b80dfba184328ae6a242c8a05f243a44
+2008-01-25T10:46:41.977474Z
+8446
+conglei
+has-props
+

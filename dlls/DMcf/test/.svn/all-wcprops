@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/test
+END
+libmcf.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/libmcf.hpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/main.cpp
+END
+fullvideos.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/fullvideos.txt
+END
+mcf_conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/mcf_conf
+END
+Commondef.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/Commondef.hpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/blog/!svn/ver/12309/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DMcf/test/Makefile
+END

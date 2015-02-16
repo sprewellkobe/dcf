@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/blog/!svn/ver/14190/develop/baserd/BASERD_C/DistributedComputationFramework/code/include
+END
+profile.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/8446/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/profile.h
+END
+transsrvcontrol.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/blog/!svn/ver/8446/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/transsrvcontrol.h
+END
+searchdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/blog/!svn/ver/8446/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/searchdef.h
+END
+stat_mon.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/blog/!svn/ver/8446/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/stat_mon.h
+END
+Commondef.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/blog/!svn/ver/14190/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/Commondef.hpp
+END
+NonbSocket2.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/blog/!svn/ver/8446/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/NonbSocket2.h
+END
+MyLog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/8818/develop/baserd/BASERD_C/DistributedComputationFramework/code/include/MyLog.hpp
+END

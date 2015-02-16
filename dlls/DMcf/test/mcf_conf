@@ -1,0 +1,8 @@
+full_source_filepath=./fullvideos.txt
+new_source_filename="/data0/conglei/vrdata/newvideos/source/newvideos.txt"
+raw_matrix_path="/data1/conglei/raw_matrix/"
+result_matrix_path="/data1/conglei/result_matrix/"
+search_data_path="/data1/conglei/search_data/"
+key_map_filename="./keymap/keymap.dat"
+full_vr_path="/data0/conglei/vrdata/fullvideos/result/"
+new_vr_path="/data0/conglei/vrdata/newvideos/result/"

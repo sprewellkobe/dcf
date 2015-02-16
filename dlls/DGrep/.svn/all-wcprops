@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/blog/!svn/ver/11213/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep
+END
+MapDLL.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/blog/!svn/ver/10818/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/MapDLL.hpp
+END
+TaskDLL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/blog/!svn/ver/11213/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/TaskDLL.cpp
+END
+ReduceDLL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/blog/!svn/ver/11213/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/ReduceDLL.cpp
+END
+TaskDLL.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/blog/!svn/ver/10818/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/TaskDLL.hpp
+END
+ReduceDLL.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/blog/!svn/ver/10929/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/ReduceDLL.hpp
+END
+MapDLL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/blog/!svn/ver/11213/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/MapDLL.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/blog/!svn/ver/10818/develop/baserd/BASERD_C/DistributedComputationFramework/code/dlls/DGrep/Makefile
+END

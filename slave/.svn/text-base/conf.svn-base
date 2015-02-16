@@ -1,0 +1,7 @@
+port=18138
+log_filename=./logs/slave.log
+dll_filepath=./
+data_filepath=./data/
+result_filepath=./result/
+reducer_ip=127.0.0.1
+reducer_port=20136

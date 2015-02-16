@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/blog/!svn/ver/12364/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave
+END
+SlaveConfigInfor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/blog/!svn/ver/9501/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/SlaveConfigInfor.cpp
+END
+MyObserver.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/blog/!svn/ver/8816/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/MyObserver.hpp
+END
+SlaveConfigInfor.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/blog/!svn/ver/9501/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/SlaveConfigInfor.hpp
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/blog/!svn/ver/8899/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/conf
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/blog/!svn/ver/12364/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/main.cpp
+END
+Common.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/10630/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/Common.cpp
+END
+main.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/blog/!svn/ver/8899/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/main.hpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/blog/!svn/ver/8874/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/Makefile
+END
+Common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/10630/develop/baserd/BASERD_C/DistributedComputationFramework/code/slave/Common.hpp
+END

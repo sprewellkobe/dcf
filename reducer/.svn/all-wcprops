@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/blog/!svn/ver/12363/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer
+END
+ReducerConfigInfor.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/blog/!svn/ver/10685/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/ReducerConfigInfor.hpp
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/blog/!svn/ver/11073/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/conf
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/12363/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/main.cpp
+END
+Common.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/blog/!svn/ver/10631/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/Common.cpp
+END
+main.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/blog/!svn/ver/10631/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/main.hpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/blog/!svn/ver/8876/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/Makefile
+END
+Common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/blog/!svn/ver/10631/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/Common.hpp
+END
+ReducerConfigInfor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/blog/!svn/ver/10685/develop/baserd/BASERD_C/DistributedComputationFramework/code/reducer/ReducerConfigInfor.cpp
+END

@@ -1,0 +1,172 @@
+#ifndef MAINHPP
+#define MAINHPP
+//-------------------------------------------------------------------------------------------------
+#include <Commondef.hpp>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <string>
+#include <vector>
+#include "Common.hpp"
+#include <pthread.h>
+using namespace std;
+//-------------------------------------------------------------------------------------------------
+class DislikeInfor
+{
+ public:
+  int order;
+  int hate;
+ public:
+  DislikeInfor(int order_a,int hate_a):order(order_a),hate(hate_a)
+  {}
+  friend bool operator<(const DislikeInfor& di1,const DislikeInfor& di2)
+  {return di1.order<di2.order;}
+};
+//-------------------------------------------------------------------------------------------------
+class ReducerInfor
+{
+ public:
+  string ip;
+  unsigned short port;
+  int sockfd;
+  unsigned int result_number;
+  unsigned int filesize;
+ public:
+  ReducerInfor():ip(""),port(0),sockfd(0),result_number(0),filesize(0)
+  {}
+  ~ReducerInfor()
+  {
+   if(sockfd>0)
+      close(sockfd);
+  }
+};
+//-------------------------------------------------------------------------------------------------
+class SlaveInfor
+{
+ public:
+  string ip;
+  unsigned short port;
+  unsigned short stat;
+  int sockfd;
+  struct event myevent;
+  char* buffer;
+  unsigned int buffer_pos;
+  unsigned int buffer_stat;
+  int order;
+  int task_number;
+  int ping_fail_times;
+  unsigned short remote_stat;
+  TimeInfor stamp;
+  pthread_mutex_t s_mutex;
+ private:
+  int finished_task_number;
+  int total_task_timecost;
+ public:
+  vector<DislikeInfor> dislike_vec;
+ public:
+  SlaveInfor():port(DCF::SLAVE_DEFAULT_PORT),stat(DCF::SS_DISCONNECTED),sockfd(0),
+               buffer(NULL),buffer_pos(0),buffer_stat(DCF::CMD_LINE),order(0),task_number(-1),
+               ping_fail_times(0),remote_stat(0),finished_task_number(0),total_task_timecost(0)
+  {
+  }
+  ~SlaveInfor()
+  {
+   if(buffer!=NULL)
+      delete[] buffer;
+   buffer=NULL;
+   pthread_mutex_destroy(&s_mutex);
+  }
+  void SetOrder(int order_a)
+  {order=order_a;}
+  int GetOrder()
+  {return order;}
+  //---------------------------------------------
+  bool Init()
+  {
+   stat=DCF::SS_DISCONNECTED;
+   buffer_stat=DCF::CMD_LINE;
+   if(buffer!=NULL)
+      delete[] buffer;
+   try
+     {buffer=new char[2*MASTER_READ_BUFFER_SIZE];}
+   catch(...)
+     {return false;}
+   buffer_pos=MASTER_READ_BUFFER_SIZE;
+   pthread_mutex_init(&s_mutex, NULL);
+   return true;
+  }
+  //---------------------------------------------
+  void FinishedOneJob(int timecost)
+  {
+   finished_task_number++;
+   total_task_timecost+=timecost;
+  }
+  float Capability()//运算能力，越小能力越大
+  {
+   if(finished_task_number==0)
+      return 0;
+   return ((float)total_task_timecost)/finished_task_number;
+  }
+  //---------------------------------------------
+  void SetRemoteStat(unsigned short stat,const TimeInfor& ti)
+  {
+   if(stamp<ti)
+     {
+      remote_stat=stat;
+      stamp=ti;
+     }
+  }
+  //---------------------------------------------
+  void DislikeTask(int task_number)
+  {
+   DislikeInfor di(task_number,1);
+   pair<vector<DislikeInfor>::iterator,vector<DislikeInfor>::iterator> result=
+   equal_range(dislike_vec.begin(),dislike_vec.end(),di);
+   if(result.first==result.second)//没找到
+      dislike_vec.insert(result.first,di);
+   else
+      result.first->hate++;
+  }
+  //---------------------------------------------
+  void Display()
+  {
+   cout<<"slave["<<order<<"]'s capability="<<Capability()<<endl;
+  }
+};//end class SlaveInfor
+//-------------------------------------------------------------------------------------------------
+bool InitSlaves();
+void ClearTaskFiles();
+int MyControl(char* request,char* reply,unsigned int length);
+bool LoadMapDLL();
+void UnloadMapDLL();
+bool CheckAliveSlaves();
+
+bool SetOneTaskToThisSlave(SlaveInfor* si);
+bool SendSlaveTask(SlaveInfor* si);
+void* SendDataThread(void* arg1);
+
+void CleanOneSlave(SlaveInfor* si,const string& hint="0");
+void SendDLLToSlaves();
+void SendDLLToSlave(int i);
+
+bool SendInforToReducer();
+bool SendDLLToReducer();
+
+bool TryConnectReducer();
+bool TryConnectOneAliveSlave(int i);
+bool TryConnectAllAliveSlaves();
+void DisconnectReducer();
+
+void TestAllSlavesStat();
+
+bool FormatCommand(SlaveInfor& si,vector<string>& cmd,int rl);
+void master_read(int fd,short event,void* arg);
+bool NonblockSend(int fd,const char* buffer,unsigned int total_size);
+bool NonblockSend_t(int i,int fd,const char* buffer,unsigned int total_size);
+bool NonblockSend_t_try(int i,int fd,const char* buffer,unsigned int total_size);
+bool BlockSend(int fd,const char* buffer,unsigned int total_size);
+
+void AllTasksFinished();
+
+void UpdateSlavesStat(int fd,short event,void* arg);
+//-------------------------------------------------------------------------------------------------
+#endif
